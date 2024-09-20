@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDECAR</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Perfil</h1>
+    </header>
+    <input type="file" id="uploadFoto" style="display: none;">
+    <label for="uploadFoto" id="labelFoto">Escolher Foto</label>
+
+    <main>
+        <section class="profile">
+            <img src="logo/marcelo.jpg" alt="Minha Foto de Perfil">
+            <h2 id="nome">Marcelo Fiori</h2>
+            <p id="descricao">Em busca de carona</p>
+            <button id="editarPerfil">Editar Perfil</button>
+        </section>
+        <section class="details">
+            <h3>Detalhes Pessoais</h3>
+            <ul>
+                <li><strong>Idade:</strong> 19 anos</li>
+                <li><strong>Cidade:</strong> Marilia-sp</li>
+                <li><strong>Email:</strong> marcelofioriunimarpessoal@gmail.com</li>
+                <li><strong>Telefone:</strong> (18)99600-6809</li>
+                <button id="editarDetalhes">Editar Detalhes</button>
+            </ul>
+        </section>
+    </main>
+    <script src="perfil.js"></script>
+    <script>
+        document.getElementById("labelFoto").addEventListener("click", function() {
+            document.getElementById("uploadFoto").click();
+        });
+    </script>
+    
+</body>
+</html>
+

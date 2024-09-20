@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDECAR - Avaliações</title>
+    <link rel="stylesheet" href="avaliar.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliações e Comentários</h1>
+    </header>
+    <main>
+        <section class="avaliacoes">
+            <h2>Avaliações dos Usuários</h2>
+            <ul id="avaliacoesList">
+            </ul>
+            <div id="mediaAvaliacoes">Média de Avaliações: 0</div>
+        </section>
+        <section class="deixar-avaliacao">
+            <h2>Deixar uma Avaliação</h2>
+            <form action="processar_avaliaçao.php" id="avaliacaoForm" method="post">
+                <div class="form-group">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="avaliacao">Avaliação (de 1 a 5):</label>
+                    <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" rows="4" name="comentario" required></textarea>
+                </div>
+                <button type="submit">
+                    <a>Enviar Avaliação</a>
+                </button>
+                <p id="erroMensagem" class="erro"></p>
+            </form>
+        </section>
+    </main>
+    <!-- <script src="avaliar.js"></script>  -->
+</body>
+</html>
+
+

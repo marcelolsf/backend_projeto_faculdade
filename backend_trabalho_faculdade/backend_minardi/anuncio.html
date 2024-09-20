@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDECAR</title>
+    <link rel="stylesheet" href="anuncio.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Anunciar Carona</h1>
+        </div>
+    </header>
+    <main>
+        <form action="processar_anuncio.php" method="post" class="ride-form">
+            <h2>Informações da Carona</h2>
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <h2>Valor da Carona</h2>
+            <label for="valorCarona">Valor da Carona:</label>
+            <input type="text" id="valorCarona" name="valorCarona">
+
+            <h2>Informações do Condutor</h2>
+            <label for="nomeCondutor">Nome do Condutor:</label>
+            <input type="text" id="nomeCondutor" name="nomeCondutor" required>
+
+            <label for="iddCondutor">Idade do Condutor:</label>
+            <input type="text" id="iddCondutor" name="iddCondutor" required>
+            
+
+            <label for="generoCondutor">Gênero do Condutor:</label>
+            <select id="generoCondutor" name="generoCondutor">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <h2>Informações do Veiculo</h2>
+            <label for="marcaCarro">Marca do Carro:</label>
+            <input type="text" id="marcaCarro" name="marcaCarro">
+
+            <label for="modeloCarro">Modelo do Carro:</label>
+            <input type="text" id="modeloCarro" name="modeloCarro">
+
+            <label for="anoCarro">Ano do Carro:</label>
+            <input type="text" id="anoCarro" name="anoCarro">
+
+            <label for="placaCarro">Placa do Carro:</label>
+            <input type="text" id="placaCarro" name="placaCarro">
+
+            <a href="#"><button type="submit">Anunciar Carona</button> </a><br>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridecar</title>
+    <link rel="stylesheet" href="buscar.css">
+</head>
+<body>
+    <header>
+        <div id="resultados">
+            <button class="modal-button" data-modal="modal1">MENU</button>
+        </div>
+        <h1>Busca de Carona</h1>
+    </header>
+    <div class="container">
+        <form method="post" action="processar_buscar.php">
+            <label for="origem">Origem:</label>
+            <input type="text" name="origem" id="origem">
+    
+            <label for="destino">Destino:</label>
+            <input type="text" name="destino" id="destino">
+    
+            <label for="horario">Horário:</label>
+            <input type="time" name="horario" id="horario">
+    
+            <label for="preco">Preço Máximo:</label>
+            <input type="text" name="preco" id="preco">
+    
+           
+            <button type="submit">Bucar Carona</button> <br> 
+        </form>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal="modal1" id="sair">&times;</span>
+            <h2>Menu</h2>
+            <a class="botao" href="perfil.html">Meu Perfil</a>
+            <a class="botao" href="anuncio.html">Anunciar Carona</a>
+            <a class="botao" href="avaliar.html">Avaliar</a>
+            <a class="botao" href="carona.html">Sair</a>
+        </div>
+    </div>
+
+    <script src="buscar.js"></script>
+</body>
+</html>
